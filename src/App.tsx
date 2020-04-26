@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header/header";
+import RecipeLoader from "./services/recipeLoader";
+import RecipesOverview from "./components/recipes-overview/recipesOverview";
 
 function App() {
+  const recipes = RecipeLoader.loadRecipes();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div>
+          <div>
+            <RecipesOverview recipes={recipes}/>
+          </div>
+      </div>
     </div>
   );
 }
