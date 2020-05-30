@@ -11,6 +11,9 @@ const RecipeDetails = ({recipe}: RecipeProps ) => {
       <div className={"center"}>
         <img src={recipe.image} alt={"Recipe"} key={recipe.id} width={300} height={300}/>
         <h2>{recipe.name}</h2>
+        <div>
+          {recipe.explanation}
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./recipesOverview.scss"
 import RecipeCard from "../recipe-card/recipeCard";
 import RecipeLoader from "../../services/recipeLoader";
+import headerHelper from "../header/headerHelper";
 
 
 const RecipesOverview = () => {
   let recipes = RecipeLoader.loadRecipes();
+  useEffect(() => headerHelper.makeActive("Recipes"));
   return (
     <div className="grid-container">
       {
