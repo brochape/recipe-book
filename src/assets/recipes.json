@@ -1,14 +1,14 @@
 [
   {
     "id": 0,
-    "name": "Recipe 0",
+    "name": "Chicken Broccoli",
     "explanation": "This is a cool recipe",
     "url": "http://google.com",
     "image": "https://eatthegains.com/wp-content/uploads/2020/01/Chicken-and-Broccoli-Stir-Fry-5.jpg"
   },
   {
     "id": 1,
-    "name": "Recipe 1",
+    "name": "Pepper Chicken",
     "explanation": "This is a cool recipe",
     "url": "http://google.com",
     "image": "https://i.pinimg.com/originals/72/5c/40/725c40b11c919867adbd22db306dc6ab.jpg"

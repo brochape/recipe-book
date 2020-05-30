@@ -8,5 +8,9 @@ export default class RecipeLoader {
     data.map(elem => recipes.push(elem as Recipe));
     return data;
   }
+
+  static addRecipe(recipe:Recipe){
+
+  }
 }
 

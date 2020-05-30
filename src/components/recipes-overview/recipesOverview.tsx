@@ -1,19 +1,16 @@
 import React from 'react';
-import Recipe from "../../models/recipe";
+import "./recipesOverview.scss"
+import RecipeCard from "../recipe-card/recipeCard";
+import RecipeLoader from "../../services/recipeLoader";
 
-interface OverviewProps{
-  recipes: Recipe[]
-}
 
-const RecipesOverview = (props: OverviewProps) => {
+const RecipesOverview = () => {
+  let recipes = RecipeLoader.loadRecipes();
   return (
-    <div>
+    <div className="grid-container">
       {
-        props.recipes.map(recipe =>
-          <div>
-            <img src={recipe.image} alt={"Recipe"} key={recipe.id} width={200} height={200}/>
-            <h1>{recipe.name}</h1>
-          </div>
+        recipes.map(recipe =>
+          <RecipeCard recipe={recipe} key={recipe.id}/>
         )
       }
     </div>

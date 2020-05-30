@@ -3,12 +3,12 @@ import React from 'react';
 const Header = () => {
     return (
         <div>
-            <a>
+            <div>
                 Recipes
-            </a>
-            <a>
+            </div>
+            <div>
                 Videos
-            </a>
+            </div>
         </div>
     );
 };
