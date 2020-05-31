@@ -4,13 +4,32 @@
     "name": "Chicken Broccoli",
     "explanation": "This is a cool recipe",
     "url": "http://google.com",
-    "image": "https://eatthegains.com/wp-content/uploads/2020/01/Chicken-and-Broccoli-Stir-Fry-5.jpg"
+    "image": "https://www.thespruceeats.com/thmb/8JDUAgMrZZ1SMM_GCMbVYFGjYm0=/4288x2412/smart/filters:no_upscale()/healthy-beef-and-broccoli-stir-fry-2238573-10-5b46564ec9e77c0037572142.jpg",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "quantity": "2",
+        "unit": ""
+      },
+      {
+        "name": "Broccoli",
+        "quantity": "1",
+        "unit": ""
+      }
+    ]
   },
   {
     "id": 1,
     "name": "Pepper Chicken",
     "explanation": "This is a cool recipe",
     "url": "http://google.com",
-    "image": "https://i.pinimg.com/originals/72/5c/40/725c40b11c919867adbd22db306dc6ab.jpg"
+    "image": "https://i.pinimg.com/originals/72/5c/40/725c40b11c919867adbd22db306dc6ab.jpg",
+    "ingredients": [
+      {
+        "name": "Chicken Breasts",
+        "quantity": "2",
+        "unit": ""
+      }
+    ]
   }
 ]

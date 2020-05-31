@@ -3,6 +3,7 @@ import "./recipesOverview.scss"
 import RecipeCard from "../recipe-card/recipeCard";
 import RecipeLoader from "../../services/recipeLoader";
 import headerHelper from "../header/headerHelper";
+import Recipe from "../../models/recipe";
 
 
 const RecipesOverview = () => {
@@ -12,7 +13,7 @@ const RecipesOverview = () => {
     <div className="grid-container">
       {
         recipes.map(recipe =>
-          <RecipeCard recipe={recipe} key={recipe.id}/>
+          <RecipeCard recipe={recipe as Recipe} key={recipe.id}/>
         )
       }
     </div>

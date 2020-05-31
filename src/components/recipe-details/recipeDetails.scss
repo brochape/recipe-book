@@ -1,4 +1,31 @@
 .center{
-  display: flex;
-  align-items: center
+  display: inline-table;
+  align-items: center;
+  width: 100%;
+}
+#image{
+  width: 100%;
+  object-fit: cover;
+}
+
+#ingredient-container{
+  display: inline;
+  width: 100%;
+}
+.row  {
+  display: table-row;
+}
+
+.column {
+  padding: 5px 10px;
+  display: table-cell;
+  text-align: left;
+}
+
+.bullet {
+  font-weight: 700;
+}
+
+.right {
+  text-align: right;
 }

@@ -3,7 +3,7 @@ ul.horizontal {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #46B8AB;
   font-size: 17px;
 }
 
@@ -15,7 +15,11 @@ ul.horizontal li {
   float: left;
 }
 
-ul.horizontal li a {
+ul.horizontal li:hover {
+  background: rgba(255, 214, 74, 0.80);
+}
+
+ul.horizontal li span {
   display: inline-block;
   color: white;
   text-align: center;
@@ -23,11 +27,11 @@ ul.horizontal li a {
   text-decoration: none;
 }
 
-ul.horizontal li a.active {
-  background-color: #2ba0af;
+ul.horizontal li span.active {
+  background-color: #FFDA44;
 }
 
-ul.horizontal li a {
+ul.horizontal li span {
   display: inline-block;
   color: white;
   text-align: center;

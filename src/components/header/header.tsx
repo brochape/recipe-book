@@ -1,23 +1,25 @@
 import React from 'react';
 import "./header.scss"
+import { useHistory } from 'react-router-dom';
 
 const Header = () => {
+  let history = useHistory();
   return (
     <ul className={"horizontal"}>
       <li>
-        <a className={"headerTitle active"} href={"/"} >
+        <span className={"headerTitle active"} onClick={() => history.push("/")}>
           Recipes
-        </a>
+        </span>
       </li>
       <li>
-        <a className={"headerTitle"} href={"/videos"} >
+        <span className={"headerTitle"}  onClick={() => history.push("/videos")}>
           Videos
-        </a>
+        </span>
       </li>
       <li>
-        <a className={"headerTitle"} href={"/add-recipe"}>
+        <span className={"headerTitle"} onClick={() => history.push("/add-recipe")}>
           Add recipe
-        </a>
+        </span>
       </li>
     </ul>
   );

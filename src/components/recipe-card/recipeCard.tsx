@@ -12,10 +12,17 @@ const RecipeCard = ({recipe}: RecipeProps) => {
   function handleClick(recipeId: number) {
     history.push("/recipe/" + recipeId);
   }
+  const imageStyle = {
+    background:"url(\"" + recipe.image +"\")",
+    backgroundSize: "cover",
+    gridArea: "image",
+  };
   return (
     <div onClick={() => handleClick(recipe.id)} className={"recipeCard"}>
-      <img src={recipe.image} alt={"Recipe"}  width={200} height={200}/>
-      <h2>{recipe.name}</h2>
+      <div className={"card-image"} style={imageStyle}/>
+      <div className={"card-text"}>
+        <h2>{recipe.name}</h2>
+      </div>
     </div>
   );
 };

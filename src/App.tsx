@@ -7,6 +7,7 @@ import RecipesOverview from "./components/recipes-overview/recipesOverview";
 import RecipeDetails from "./components/recipe-details/recipeDetails";
 import NotFound from "./components/not-found/NotFound";
 import AddRecipePage from "./components/add-recipe/AddRecipePage";
+import Recipe from "./models/recipe";
 
 function App() {
   const recipes = RecipeLoader.loadRecipes();
@@ -18,7 +19,7 @@ function App() {
         <Route exact path={"/"} component={RecipesOverview}/>
         <Route path={"/recipe/:id"}
                component={(routerProps: any) => {
-                 let recipe = recipes.find(recipe => recipe.id === parseInt(routerProps.match.params.id));
+                 let recipe = recipes.find(recipe => recipe.id === parseInt(routerProps.match.params.id)) as Recipe;
                  return recipe !== undefined ? RecipeDetails({recipe}) : NotFound()
                }}/>
         <Route path={"/add-recipe"} component={AddRecipePage}/>
